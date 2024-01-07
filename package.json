@@ -1,0 +1,17 @@
+{
+  "name": "oye",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": { "sass": "sass --watch scss/main.scss:style.css"},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suppernovha/OYE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suppernovha/OYE/issues"
+  },
+  "homepage": "https://github.com/suppernovha/OYE#readme"
+}

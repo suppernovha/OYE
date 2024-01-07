@@ -1,0 +1,75 @@
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+/* Styles généraux */
+    
+body {
+    font-family: "roboto", sans-serif;
+    color: white;
+    background-color: #141414;
+}
+
+a {
+    cursor: pointer;
+}
+
+.background_accueil {
+    position: absolute;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.gradient-bar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(to top, #121212, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+    height: 80px;
+    z-index: 1;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    background-color: #141414;
+
+}
+
+.fixed {
+    position: fixed;
+}
+
+.noscroll {
+    overflow: hidden;
+}
+
+.display {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+/* Styles du footer */
+.footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 20px 0;
+}

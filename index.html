@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="scripts/movies.js" defer></script>
+
+
+    <title>Open Your Eyes</title>
+</head>
+<body class="body">
+
+  <div class="background_accueil hide"></div>
+<!-- Barre de navigation -->
+<nav class="navbar">
+    <div class="navbar__left">
+        <a href="#" class="logo"><img src="assets/logos/earth-logo.png" alt="" class="navbar__logo"></a>
+        <ul class="navbar__links">
+            <li class="nav-txt"><a href="index.html">Accueil</a></li>
+            <li class="nav-txt"><a href="films.html">Films</a></li>
+            <li class="nav-txt"><a href="#">Documentaires</a></li>
+            <li class="nav-txt"><a href="#">Reportages</a></li>
+            <li class="nav-txt"><a href="#">Shorts</a></li>
+        </ul>
+    </div>
+
+    <div class="navbar__right">
+        <a><img src="assets/icons/loupe.png" alt="" class="navbar__icon"></a>
+        <a><p class="navbar__link">Blog</p></a>
+        <div class="search-bar"><a><img src="assets/icons/bell.png" alt="" class="navbar__icon"></a></div>
+        <img src="assets/user/user.png" alt="" class="user__img">
+        <div class="user">
+            <img src="assets/icons/arrow-point-to-down.png" alt="" class="user__arrow">
+                <ul class="user__info">
+                    <li>Compte</li>
+                    <li>Centre d'aide</li>
+                    <li>Déconnexion </li>
+                </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- Section HERO -->
+<section class="hero">
+  <div class="hero__prev">
+    <div><video autoplay conrols muted class="hero__video animation-hero__video"></video></div>
+    <div class="hero__infos">  
+      <img src="assets/media/title/avatar_title.png" alt="" class="hero__title">
+      <p class="hero__resume"></p>
+      <div class="hero__buttons">
+        <button class="button"><img src="assets/icons/play.png" class="button__playicon" alt="">Lecture</button>
+        <button class="button button--grey buttonInfo"><img src="assets/icons/information.png" class="button__infoicon" alt="">Plus d'infos</button>        
+      </div>
+
+    </div>
+      <img src="assets/icons/replay.png" alt="" class="hero__controls--replay round-button replay-button">
+      <img src="assets/icons/mute.png" alt="" class="hero__controls--sound round-button mute-button">
+      <img src="assets/icons/unmute.png" alt="" class="hero__controls--sound round-button unmute-button"> 
+      <img src="assets/icons/plus.png" alt="" class="hero__controls--add round-button add-button">
+      <img src="assets/icons/checked.png" alt="" class="hero__controls--add round-button checked-button hide">
+  </div>
+
+    <div class="playlist hero__playlist">
+      <h1 class="playlist__title">Ma liste</h1>
+      <div class="playlist__list">
+          <div class="playlist__prev prev_1"></div>
+          <div class="playlist__prev prev_2"></div>
+          <div class="playlist__prev prev_3"></div>
+          <div class="playlist__prev prev_4"></div>
+          <div class="playlist__prev prev_5"></div>
+          <div class="playlist__prev prev_6"></div>
+      </div>
+    </div>
+  
+    <div class="gradient-bar"></div>
+
+<!-- POPUP -->
+  <div class="popup hide">
+    <img src="assets/icons/close.png" alt="" class="round-button round-button__close">
+    <div class="popup__header">
+      <div><video width="100%" autoplay conrols muted class="popup__video"></video></div>
+      <div class="row fullrow">
+      <div class="column">
+        <img src="assets/media/title/avatar_title.png" alt="" class="popup__title">
+        <div class="row popup__controls">
+          <button class="button button--popup"><img src="assets/icons/play.png" class="button__playicon button__playicon--popup" alt="">Lecture</button>
+          <img src="assets/icons/plus.png" alt="" class="round-button popupAdd-button">
+          <img src="assets/icons/checked.png" alt="" class="round-button add-button popupChecked-button hide">
+          <img src="assets/icons/like.png" alt="" class="round-button add-button buttonUnlike">
+          <img src="assets/icons/like-fill.png" alt="" class="round-button add-button buttonLike hide">
+        </div>
+      </div>
+      
+        <img src="assets/icons/mute.png" alt="" class="round-button add-button mute-button popupMute-button">
+        <img src="assets/icons/unmute.png" alt="" class="round-button add-button unmute-button popupUnmute-button">
+      
+    </div>
+      <div class="popup__gradient"></div>
+    </div>
+    <div class="popup__description">
+      <div class="column">
+        <div class="row">
+          <h2 class="year popup__description--infos">Sorti en 2023</h2>
+          <h2 class="duration popup__description--infos">3 h 12 mn</h2>
+        </div>
+        <p class="resume popup__description--resume">Jake Sully et Neytiri ont formé une famille et font tout pour rester aussi soudés que possible. Ils sont cependant contraints de quitter leur foyer et d'explorer les différentes régions encore mystérieuses de Pandora. Lorsqu'une ancienne menace refait surface, Jake va devoir mener une guerre difficile contre les humains.</p>
+      </div>
+      <div class="column">
+        <div class="row">
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Section de contenu -->
+<section class="content">
+  <div class="playlist">
+      <h1 class="playlist__title">Films interstellaires</h1>
+      <div class="playlist__list">
+          <div class="playlist__prev"></div>
+          <div class="playlist__prev"></div>
+          <div class="playlist__prev"></div>
+      </div>
+  </div>
+</section>
+    

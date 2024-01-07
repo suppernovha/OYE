@@ -1,0 +1,115 @@
+@keyframes popup {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+    75% {
+        opacity: 1;  
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes popup-rewind {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    75% {
+        opacity: 0.8;
+        transform: scale(0.8);
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+.popup {
+    z-index: 3;
+    position: fixed;
+    top: 5%;
+    left: 25%;
+    width: 55vw;
+    background-color: #121212;
+    border-radius: 1%;
+    transform: translate(-50%, -50%);
+    animation: popup 400ms ease-in-out forwards;
+    &--rewind {
+        animation: popup-rewind 400ms ease-in-out forwards;
+    }
+    &__video {
+        //animation: video-opacity 4000ms;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+    &__header {
+        background-image: url('assets/media/cover/avatar.png');
+        background-size: cover;
+        background-color: #121212;
+        border-top-right-radius: 1%;
+        border-top-left-radius: 1%;
+        height: 500px;
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+        padding: 40px;
+        padding-bottom: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: flex-end;
+    }
+    &__title {
+        z-index: 2;
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    &__controls{
+        z-index: 2;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+    &__gradient {
+        z-index: 2;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        background: linear-gradient(to top, #121212, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+    }
+    &__description {
+        padding: 40px;
+        &--infos {
+            color: grey;
+            font-size: 14px;
+            font-weight: 400;
+            margin-right: 10px;
+            margin-bottom: 30px;
+        }
+        &--resume {
+            text-align: left;
+            font-weight: 300;
+            font-size: 14px;
+        }
+    }
+
+}
+
+
+.fullrow {
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}

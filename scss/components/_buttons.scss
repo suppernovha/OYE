@@ -1,0 +1,105 @@
+.button {
+    
+    
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0.8rem 1.8rem;
+    border-radius: 4px;
+    border: none;
+    gap: 10px;
+    &:hover {
+    opacity: 0.7;    
+    }
+    &--popup {
+        padding: 0.4rem 1.8rem;
+        font-size: 16px;
+    }
+&__playicon {
+    width: 23px;
+    &--popup {
+        width: 18px;
+    }
+}
+&__infoicon {
+    width: 23px;
+}
+&--grey {
+    background-color: rgba(109, 109, 110, 0.7);
+    color: white;
+}
+}
+
+.round-button {
+    z-index: 2;
+    width: 38px;
+    
+    border: 2px solid rgb(181, 181, 181);
+    border-radius: 35px;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgb(255, 255, 255);
+    }
+    &:active {
+        background-color: rgba(212, 211, 211, 0.8);
+
+    }
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: black;
+        width: 30px;
+        padding: 6px;
+        border: none;
+        &:hover {
+            background-color: black;
+
+        }
+    }
+    
+}
+
+// Classes pour le javascript
+// Hero
+.unmute-button {
+    display: none;
+    &--display {
+        display: flex;
+    }
+}
+
+.mute-button {
+    display: flex;
+    &--display {
+        display: none;
+    }
+}
+// Popup
+.popupUnmute-button {
+    display: none;
+    &--display {
+        display: flex;
+    }
+}
+
+.popupMute-button {
+    display: flex;
+    &--display {
+        display: none;
+    }
+}
+
+.replay-button {
+    display: none;
+    &--display {
+        display: flex;
+    }
+}
+
